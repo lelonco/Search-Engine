@@ -71,7 +71,7 @@ namespace Search_Engine
                             case ("5"):
                                 Deamon d1 = new Deamon(fileName, searchStr, numb);
                                 //Thread t = new Thread();
-                                //t.SetApartmentState(ApartmentState.STA);
+                                // t.SetApartmentState(ApartmentState.STA);
                                 //t.Start();
                                 ThreadPool.QueueUserWorkItem(d1.Start);
                                 inFunc = "No";

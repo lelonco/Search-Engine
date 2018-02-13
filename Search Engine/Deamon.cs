@@ -47,7 +47,7 @@ namespace Search_Engine
         public void Print()
         {
             // Console.WriteLine("Source:{0}", src);
-
+            //
             Console.WriteLine(format: "Номер демона{0} \n Слово для пошука {1}", arg0: id, arg1: searchStr);
         }
         public void Start(Object threadContext)
@@ -61,8 +61,8 @@ namespace Search_Engine
         }
         public void Search(Object threadContext)
         {
-            Application.Current.Dispatcher.Invoke((Action)delegate 
-            {
+         //   Application.Current.Dispatcher.Invoke((Action)delegate 
+         //   {
                 int threadIndex = (int)threadContext;
                 Window1 w = new Window1();
                 w.Show();
@@ -109,11 +109,11 @@ namespace Search_Engine
                     return;
                 }
 
-            });
+           // });
 
            
         }
-        [STAThread]
+       // [STAThread]
         public void Create(int numb, string[] src, string searchStr) 
         {
             
